@@ -81,7 +81,7 @@ export default class UserList extends React.Component {
           <li><em>If you tried removing a role but didn’t have permission, the checkbox will become unchecked and you’ll get an error message (“You are not authorized to perform the requested action”).</em></li>
         </ul>
         <p><em>
-          <a href="https://github.com/18F/cg-deck/issues/409">We’ll improve this.</a>
+          <a href="https://github.com/AusDTO/cg-deck/issues/409">We’ll improve this.</a>
         </em></p>
         <table sortable={ true }>
           <thead>

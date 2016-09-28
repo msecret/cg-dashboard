@@ -1,13 +1,13 @@
 ## Welcome!
 
-We're so glad you're thinking about contributing to an 18F open source project! If you're unsure or afraid of anything, just ask or submit the issue or pull request anyways. The worst that can happen is that you'll be politely asked to change something. We appreciate any sort of contribution, and don't want a wall of rules to get in the way of that.
+We're so glad you're thinking about contributing to an AusDTO open source project! If you're unsure or afraid of anything, just ask or submit the issue or pull request anyways. The worst that can happen is that you'll be politely asked to change something. We appreciate any sort of contribution, and don't want a wall of rules to get in the way of that.
 
-Before contributing, we encourage you to read our CONTRIBUTING policy (you are here), our LICENSE, and our README, all of which should be in this repository. If you have any questions, or want to read more about our underlying policies, you can consult the 18F Open Source Policy GitHub repository at https://github.com/18f/open-source-policy, or just shoot us an email/official government letterhead note to [18f@gsa.gov](mailto:18f@gsa.gov).
+Before contributing, we encourage you to read our CONTRIBUTING policy (you are here), our LICENSE, and our README, all of which should be in this repository. If you have any questions, or want to read more about our underlying policies, you can consult the AusDTO Open Source Policy GitHub repository at https://github.com/AusDTO/open-source-policy, or just shoot us an email/official government letterhead note to [AusDTO@gsa.gov](mailto:AusDTO@gsa.gov).
 
 ## High-level roadmap
 The cloud.gov dashboard is a unit-tested react single page application. It's previous version, available at [console.cloud.gov](https://console.cloud.gov) was an angular app, and is available at the `deprecated` branch.
 
-The work on cloud.gov front end fits into a higher level roadmap for all of cloud.gov. For now, this is in [another tool](https://18f.aha.io/products/CGP/bookmarks/project_timelines/new) only accessible by 18F personnel. Soon we will publish the information.
+The work on cloud.gov front end fits into a higher level roadmap for all of cloud.gov. For now, this is in [another tool](https://AusDTO.aha.io/products/CGP/bookmarks/project_timelines/new) only accessible by AusDTO personnel. Soon we will publish the information.
 
 ## Workflow
 Tracking work and progress is currently being done through [Zenhub](https://www.zenhub.io/), which adds a browser extension to add additional agile features to github. The main feature Zenhub adds is a "Boards" page which is an agile board detailing the state of work for the dashboard.
@@ -16,7 +16,7 @@ Tracking work and progress is currently being done through [Zenhub](https://www.
 - Stories or ideas for features can start in backlog or icebox.
 
 #### Criteria for moving through colums
-The main criteria for moving a card through the columsn can be found on the main cloud.gov product repo: [cloud.gov Delivery Process](https://github.com/18F/cg-product/blob/master/DeliveryProcess.md). Some aspects that differ or extend for that process as related to cloud.gov front end:
+The main criteria for moving a card through the columsn can be found on the main cloud.gov product repo: [cloud.gov Delivery Process](https://github.com/AusDTO/cg-product/blob/master/DeliveryProcess.md). Some aspects that differ or extend for that process as related to cloud.gov front end:
 - For a story to be past "in progress" and in "awaiting acceptance" it should:
   - have all new files and newly touched files linted (new files can skip linting if under tight deadline)
   - have all previous unit tests and acceptance tests running without error.
@@ -28,7 +28,7 @@ The main criteria for moving a card through the columsn can be found on the main
   - if the work has a visual aspect, post a screenshot attached for later documentation/announcement/demo purposes
 - A product owner or team member will check a story waiting acceptance and put it into "done" if it meets the criteria.
 
-For more information, see the high-level [cloud.gov respository](https://github.com/18F/cg-product) and [delivery process](https://github.com/18F/cg-product/blob/master/DeliveryProcess.md).
+For more information, see the high-level [cloud.gov respository](https://github.com/AusDTO/cg-product) and [delivery process](https://github.com/AusDTO/cg-product/blob/master/DeliveryProcess.md).
 
 
 ## Code standards
@@ -62,7 +62,7 @@ In general, commit messages can be written in whatever way the author decides, b
 ### Coding style
 - [Airbnb styleguide for JS](https://github.com/airbnb/javascript)
   - Re-add deprecation warnings on linter when upgrade react.
-- [18F styleguide for CSS](https://pages.18f.gov/frontend/css-coding-styleguide/)
+- [AusDTO styleguide for CSS](https://pages.AusDTO.gov/frontend/css-coding-styleguide/)
 - Linting will be run before tests run, so will fail the tests if files are not linted.
 - Additionally, linting should always
   - fail on CI
@@ -94,7 +94,7 @@ The code base includes linting configurations and tools, but is currently not fu
 ### Code review
 - When doing code reviews, the reviewer should pull down the code and test on their local computer. This is because the staging site is not often used, meaning bugs could be present for long amounts of time.
   - If a code change is very simple, or is not a code change (but maybe a document change) it doesn't need to be pulled down.
-- We can give other members of 18F the public URL to the staging site.
+- We can give other members of AusDTO the public URL to the staging site.
 
 ### Device support
 - Browser support is all major browsers and Internet Explorer 10 and up.
@@ -117,22 +117,22 @@ Adding performance tracking and metrics is currently a TODO. Here are some items
 ## Onboarding checklist
 - [ ] Join the `#cloud-gov-liberator` channel on Slack
 - [ ] Ping @standup-bot for instructions on front end channel standup (or view them in channel history)
-- [ ] Review the main [front end board](https://github.com/18F/cg-dashboard#boards?repos=39210774)
-- [ ] Review the cloud.gov [delivery process](https://github.com/18F/cg-product/blob/master/DeliveryProcess.md) to understand how the agile boards and workflow works.
+- [ ] Review the main [front end board](https://github.com/AusDTO/cg-dashboard#boards?repos=39210774)
+- [ ] Review the cloud.gov [delivery process](https://github.com/AusDTO/cg-product/blob/master/DeliveryProcess.md) to understand how the agile boards and workflow works.
 - [ ] Bookmark link to [design folder](https://drive.google.com/drive/u/1/folders/0BwLqM4Nicmq-bUt0NjRjclFMUEU)
 - [ ] Review the primary cloud.gov sites: [the dashboard](https://dashboard.cloud.gov/#/), [main landing page](https://cloud.gov/), and [documentation](https://docs.cloud.gov/).
 
 #### If developing
-- [ ] Set up [the landing page site](https://github.com/18F/cg-landing) and/or [the dashboard](https://github.com/18F/cg-dashboard) and/or [the docs site](https://github.com/18F/cg-docs) and/or [style](https://github.com/18F/cg-style) locally
-- [ ] Setup cloudgov-style to be [linked to the other sites locally](https://github.com/18F/cg-style#development-and-contributing-setup).
+- [ ] Set up [the landing page site](https://github.com/AusDTO/cg-landing) and/or [the dashboard](https://github.com/AusDTO/cg-dashboard) and/or [the docs site](https://github.com/AusDTO/cg-docs) and/or [style](https://github.com/AusDTO/cg-style) locally
+- [ ] Setup cloudgov-style to be [linked to the other sites locally](https://github.com/AusDTO/cg-style#development-and-contributing-setup).
 - [ ] Have cloud.gov person send the cg-dashboard testing env vars through fugacious
-- [ ] Review [dashboard contributing guide](https://github.com/18F/cg-dashboard/CONTRIBUTING.md) and [cloudgov-style standards](https://github.com/18F/cg-style/blob/master/documentation/frontend_standards.md)
+- [ ] Review [dashboard contributing guide](https://github.com/AusDTO/cg-dashboard/CONTRIBUTING.md) and [cloudgov-style standards](https://github.com/AusDTO/cg-style/blob/master/documentation/frontend_standards.md)
 
 #### For review
 - Review the [design resource request document](https://docs.google.com/document/d/1s96VP6PB7fbc8g_GwgAZ1hCPmew-J35ZOJx772c1AZ4/edit) if you haven’t already to get a sense of your role on the project
 - Review the [design principals](https://docs.google.com/spreadsheets/d/14Y3RKaLUt6RPX5w13iz7oaSCpojEQ-Wqjnd8Ie_VkCc/edit#gid=259774738) to get a sense of how the cloud.gov team feels about the product
 - Review the [competitive analysis](https://docs.google.com/spreadsheets/u/1/d/194tGz75NFwFyH8jT7zY_n-O0I7N4yAGYtIG4hw9qPcQ/edit?usp=drive_web) to get a sense of our "competitors" and their dashboard.
-- Review the [cloudgov-style styleguide](https://pages.18f.gov/cg-style/) to get a sense of the global cloud.gov visual style.
+- Review the [cloudgov-style styleguide](https://pages.AusDTO.gov/cg-style/) to get a sense of the global cloud.gov visual style.
 - Review the [US Web Design Standards](https://standards.usa.gov/) as cloudgov-style was built from it.
 - Review the dashboard, current [prod](https://dashboard.cloud.gov/#/), [master](https://dashboard-master.apps.cloud.gov/#/) and [staging](https://dashboard-staging.apps.cloud.gov/#/)
 - Review the cloud foundry [community UI](http://ui.apps.cloud.gov/), a UI that members of the cloud foundry community created and is being used as a basis for our own dashboard design.

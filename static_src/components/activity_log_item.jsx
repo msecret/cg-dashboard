@@ -107,7 +107,7 @@ export default class ActivityLogItem extends React.Component {
     const link = (route) ? (<a href={ `//${url}` }>{ url }</a>) : url;
 
     // TODO: if route is not found, trigger fetch action to get it
-    // https://github.com/18F/cg-dashboard/pull/533#discussion_r73931508
+    // https://github.com/AusDTO/cg-dashboard/pull/533#discussion_r73931508
 
     if (item.type === 'app.crash') {
       content = this.crashContent;

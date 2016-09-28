@@ -1,6 +1,6 @@
-# 18F Cloud Foundry Dashboard
+# AusDTO Cloud Foundry Dashboard
 
-[![CircleCI](https://circleci.com/gh/18F/cg-dashboard.svg?style=svg)](https://circleci.com/gh/18F/cg-dashboard)
+[![CircleCI](https://circleci.com/gh/AusDTO/cg-dashboard.svg?style=svg)](https://circleci.com/gh/AusDTO/cg-dashboard)
 
 [Production](https://dashboard.cloud.gov)
 [Master](https://dashboard-master.apps.cloud.gov)
@@ -15,19 +15,19 @@ Learn more about [cloud.gov](https://cloud.gov).
 
 ## Tech Stack
 
-### Backend Server [![Go Code Coverage Status](https://coveralls.io/repos/18F/cg-dashboard/badge.svg?branch=master&service=github)](https://coveralls.io/github/18F/cg-dashboard?branch=master)
+### Backend Server [![Go Code Coverage Status](https://coveralls.io/repos/AusDTO/cg-dashboard/badge.svg?branch=master&service=github)](https://coveralls.io/github/AusDTO/cg-dashboard?branch=master)
 - `Go` (version 1.6.2)
 
-### Front end application [![JS Code Coverage Status](https://coveralls.io/repos/18F/cg-dashboard/badge.svg?branch=master&service=github)](https://coveralls.io/repos/18F/cg-dashboard/badge.svg?branch=master&service=github)
+### Front end application [![JS Code Coverage Status](https://coveralls.io/repos/AusDTO/cg-dashboard/badge.svg?branch=master&service=github)](https://coveralls.io/repos/AusDTO/cg-dashboard/badge.svg?branch=master&service=github)
 - `Node` (version 6.x.x)
 - `React` (version ^0.14.0)
 
 ## Setup
 ### Cloning the repository
-If you are unfamiliar with [`Go` project directory structure](https://golang.org/doc/code.html#Workspaces), you want the code in this repository to be in something like `<your-code-directory>/cg-dashboard-ws/src/github.com/18f/cg-dashboard`. You can use that exact pattern by cloning the repository with:
+If you are unfamiliar with [`Go` project directory structure](https://golang.org/doc/code.html#Workspaces), you want the code in this repository to be in something like `<your-code-directory>/cg-dashboard-ws/src/github.com/AusDTO/cg-dashboard`. You can use that exact pattern by cloning the repository with:
 
 ```
-git clone git@github.com:18F/cg-dashboard.git cg-dashboard-ws/src/github.com/18F/cg-dashboard
+git clone git@github.com:AusDTO/cg-dashboard.git cg-dashboard-ws/src/github.com/AusDTO/cg-dashboard
 ```
 
 ### Create a Client with UAAC
@@ -65,7 +65,7 @@ If you are deploying to cloud foundry, modify the `manifest.yml`
 - `CG_STYLE_PATH`: <optional> The absolute path to your `cg-style` repo. If set, will use a local copy of `cloudgov-style` to build the front end application.
 
 ## Front end
-Front end build commands should be run in the same directory as the `package.json` file. If you've used the cloning command from this README it should be something like `/path/to/cg-dashboard-ws/src/github.com/18F/cg-dashboard`
+Front end build commands should be run in the same directory as the `package.json` file. If you've used the cloning command from this README it should be something like `/path/to/cg-dashboard-ws/src/github.com/AusDTO/cg-dashboard`
 
 Install front end dependencies (may require [special steps for node-gyp](https://github.com/nodejs/node-gyp#installation)):
 ```

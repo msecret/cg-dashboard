@@ -25,7 +25,7 @@ export default class Disclaimer extends React.Component {
           </span>
           <span className={ this.styler('usa-disclaimer-stage') }>
             This site is currently in alpha.
-            <a href="https://18f.gsa.gov/dashboard/stages/#alpha">
+            <a href="https://AusDTO.gsa.gov/dashboard/stages/#alpha">
               Learn more.
             </a>
           </span>

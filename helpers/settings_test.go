@@ -1,7 +1,7 @@
 package helpers_test
 
 import (
-	"github.com/18F/cg-dashboard/helpers"
+	"github.com/AusDTO/cg-dashboard/helpers"
 	"testing"
 )
 

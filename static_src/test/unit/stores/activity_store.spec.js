@@ -147,7 +147,7 @@ describe('ActivityStore', function() {
     it('should merge activity and emit change', function () {
       const logs = [
         {
-          message: "federalist.18f.gov - [17/08/2016:00:09:56.467 +0000] \"GET /socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1471392596201-8120 HTTP/1.1\" 200 0 90 \"https://federalist.18f.gov/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\" 127.0.0.1:34350 x_forwarded_for:\"50.0.192.84\" x_forwarded_proto:\"https\" vcap_request_id:5e288c8d-d9d8-4589-7956-0427ab11e33f response_time:0.003466191 app_id:32f77e21-d504-4b4a-91c3-ea4c6bcc47e5\n"
+          message: "federalist.AusDTO.gov - [17/08/2016:00:09:56.467 +0000] \"GET /socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1471392596201-8120 HTTP/1.1\" 200 0 90 \"https://federalist.AusDTO.gov/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\" 127.0.0.1:34350 x_forwarded_for:\"50.0.192.84\" x_forwarded_proto:\"https\" vcap_request_id:5e288c8d-d9d8-4589-7956-0427ab11e33f response_time:0.003466191 app_id:32f77e21-d504-4b4a-91c3-ea4c6bcc47e5\n"
         }
       ];
 
@@ -165,7 +165,7 @@ describe('ActivityStore', function() {
     it('should set fetched to true, fetching to false', function() {
       const logs = [
         {
-          message: "federalist.18f.gov - [17/08/2016:00:09:56.467 +0000] \"GET /socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1471392596201-8120 HTTP/1.1\" 200 0 90 \"https://federalist.18f.gov/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\" 127.0.0.1:34350 x_forwarded_for:\"50.0.192.84\" x_forwarded_proto:\"https\" vcap_request_id:5e288c8d-d9d8-4589-7956-0427ab11e33f response_time:0.003466191 app_id:32f77e21-d504-4b4a-91c3-ea4c6bcc47e5\n"
+          message: "federalist.AusDTO.gov - [17/08/2016:00:09:56.467 +0000] \"GET /socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1471392596201-8120 HTTP/1.1\" 200 0 90 \"https://federalist.AusDTO.gov/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\" 127.0.0.1:34350 x_forwarded_for:\"50.0.192.84\" x_forwarded_proto:\"https\" vcap_request_id:5e288c8d-d9d8-4589-7956-0427ab11e33f response_time:0.003466191 app_id:32f77e21-d504-4b4a-91c3-ea4c6bcc47e5\n"
         }
       ];
 
@@ -215,14 +215,14 @@ describe('ActivityStore', function() {
     it('should parse log items', function () {
       const logs = [
         {
-          message: "federalist.18f.gov - [17/08/2016:00:09:56.467 +0000] \"GET /socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1471392596201-8120 HTTP/1.1\" 200 0 90 \"https://federalist.18f.gov/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\" 127.0.0.1:34350 x_forwarded_for:\"50.0.192.84\" x_forwarded_proto:\"https\" vcap_request_id:5e288c8d-d9d8-4589-7956-0427ab11e33f response_time:0.003466191 app_id:32f77e21-d504-4b4a-91c3-ea4c6bcc47e5\n"
+          message: "federalist.AusDTO.gov - [17/08/2016:00:09:56.467 +0000] \"GET /socket.io/?__sails_io_sdk_version=0.11.0&__sails_io_sdk_platform=browser&__sails_io_sdk_language=javascript&EIO=3&transport=polling&t=1471392596201-8120 HTTP/1.1\" 200 0 90 \"https://federalist.AusDTO.gov/\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\" 127.0.0.1:34350 x_forwarded_for:\"50.0.192.84\" x_forwarded_proto:\"https\" vcap_request_id:5e288c8d-d9d8-4589-7956-0427ab11e33f response_time:0.003466191 app_id:32f77e21-d504-4b4a-91c3-ea4c6bcc47e5\n"
         }
       ];
       const expected = [
         {
           app_guid: "32f77e21-d504-4b4a-91c3-ea4c6bcc47e5",
           raw: logs[0],
-          host: "federalist.18f.gov",
+          host: "federalist.AusDTO.gov",
           guid: "2016-08-17 00:09 +00005e288c8d-d9d8-4589-7956-0427ab11e33f",
           activity_type: "log",
           metadata: {

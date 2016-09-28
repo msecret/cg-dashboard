@@ -3,8 +3,8 @@
 package acceptance
 
 import (
-	. "github.com/18F/cg-dashboard/acceptance/util"
-	. "github.com/18F/cg-dashboard/acceptance/views"
+	. "github.com/AusDTO/cg-dashboard/acceptance/util"
+	. "github.com/AusDTO/cg-dashboard/acceptance/views"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/sclevine/agouti"

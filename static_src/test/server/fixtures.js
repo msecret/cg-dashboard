@@ -97,11 +97,11 @@ var apps = appGuids.map(function(guid, i) {
     routes: [
       {
         guid: 'd32ee365-637b-493d-874e-8fe93c7212e2',
-        host: '18f-site',
+        host: 'AusDTO-site',
         path: '',
         domain: {
           guid: '3750eb89-86c6-4882-96bf-66b8c6363290',
-          name: '18f.gov'
+          name: 'AusDTO.gov'
         }
       }
     ]
@@ -116,7 +116,7 @@ var appStats = {
     stats: {
       name: "testapp01",
       uris: [
-        "testapp01.18f.gov"
+        "testapp01.AusDTO.gov"
       ],
       host: "10.10.1.103",
       port: 61035,

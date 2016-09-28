@@ -5,5 +5,5 @@ services:
   - deck-ups
 env:
   GOVERSION: go1.6.2
-  GOPACKAGENAME: github.com/18F/cg-dashboard
+  GOPACKAGENAME: github.com/AusDTO/cg-dashboard
   GO15VENDOREXPERIMENT: 1

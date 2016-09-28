@@ -299,7 +299,7 @@ describe('RouteStore', function() {
 
       RouteStore.push(existingRoute);
 
-      const newRoute = { guid: 'zxcb', host: '18f' };
+      const newRoute = { guid: 'zxcb', host: 'AusDTO' };
 
       AppDispatcher.handleServerAction({
         type: routeActionTypes.ROUTES_FOR_APP_RECEIVED,

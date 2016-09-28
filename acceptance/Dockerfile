@@ -1,4 +1,4 @@
-FROM 18fgsa/cg-deck-acceptance-test-onbuild
+FROM AusDTOgsa/cg-deck-acceptance-test-onbuild
 MAINTAINER James C. Scott III <jcscott.iii@gmail.com>
 
 EXPOSE 5900

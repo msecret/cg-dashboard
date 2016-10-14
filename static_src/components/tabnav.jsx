@@ -1,6 +1,6 @@
 
 import classNames from 'classnames';
-import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+import style from '../scss/main.scss';
 import React from 'react';
 
 import createStyler from '../util/create_styler';

@@ -3,7 +3,7 @@
  * Renders a list of service plans
  */
 
-import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+import style from '../scss/main.scss';
 import React from 'react';
 
 import Action from './action.jsx';

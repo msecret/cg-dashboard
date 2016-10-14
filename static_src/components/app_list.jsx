@@ -1,5 +1,5 @@
 
-import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+import style from '../scss/main.scss';
 import dedent from 'dedent';
 import React from 'react';
 import Reactable from 'reactable';

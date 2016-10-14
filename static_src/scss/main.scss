@@ -1,5 +1,9 @@
+$gov-ui-kit-image-base-url: 'https://gov-au-ui-kit.apps.staging.digital.gov.au/latest/img/';
+
+@import "~gov-au-ui-kit";
+
 body {
   header {
-    background-color: #000!important;
+    background-color: $light-green;
   }
 }

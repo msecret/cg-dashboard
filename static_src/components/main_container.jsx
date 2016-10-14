@@ -1,6 +1,6 @@
 
 import React from 'react';
-import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+import style from '../scss/main.scss';
 import overrideStyle from '../css/overrides.css';
 
 import createStyler from '../util/create_styler';

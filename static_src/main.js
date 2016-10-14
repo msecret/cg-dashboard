@@ -1,5 +1,5 @@
 
-import 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+//import 'gov-au-ui-kit/assets/sass/ui-kit.scss';
 import '../static_src/scss/main.scss';
 //import 'cloudgov-style/css/base.css';
 //import './css/main.css';

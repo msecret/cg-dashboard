@@ -2,7 +2,7 @@
  * Renders the form to create a service instance
  */
 
-import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+import style from '../scss/main.scss';
 import React from 'react';
 import ReactDOM from 'react-dom';
 

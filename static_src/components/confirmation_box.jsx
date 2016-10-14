@@ -3,7 +3,7 @@
  * A component that renders a box with a different style and background
  */
 
-import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
+import style from '../scss/main.scss';
 import React from 'react';
 
 import createStyler from '../util/create_styler';

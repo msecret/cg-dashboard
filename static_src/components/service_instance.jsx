@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import style from 'cloudgov-style/css/cloudgov-style.css';
+import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
 
 import ServicePlanStore from '../stores/service_plan_store.js';
 import ServiceInstanceStore from '../stores/service_instance_store.js';

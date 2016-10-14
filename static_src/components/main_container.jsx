@@ -1,6 +1,6 @@
 
 import React from 'react';
-import style from 'cloudgov-style/css/cloudgov-style.css';
+import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
 import overrideStyle from '../css/overrides.css';
 
 import createStyler from '../util/create_styler';

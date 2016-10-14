@@ -1,6 +1,6 @@
 
 import React from 'react';
-import style from 'cloudgov-style/css/cloudgov-style.css';
+import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
 import loadingImg from 'cloudgov-style/img/loading.gif';
 
 import createStyler from '../util/create_styler';

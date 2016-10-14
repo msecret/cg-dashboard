@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import style from 'cloudgov-style/css/cloudgov-style.css';
+import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
 
 import AppStore from '../stores/app_store.js';
 import Loading from './loading.jsx';

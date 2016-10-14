@@ -1,5 +1,5 @@
 
-import style from 'cloudgov-style/css/cloudgov-style.css';
+import style from 'gov-au-ui-kit/assets/sass/ui-kit.scss';
 import dedent from 'dedent';
 import React from 'react';
 import Reactable from 'reactable';

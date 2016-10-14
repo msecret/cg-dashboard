@@ -103,5 +103,10 @@
     "url-loader": "^0.5.7",
     "watch": "^0.16.0",
     "webpack": "^1.12.9"
+  },
+  "devDependencies": {
+    "node-sass": "https://registry.npmjs.org/node-sass/-/node-sass-3.4.2.tgz",
+    "sass-loader": "https://registry.npmjs.org/sass-loader/-/sass-loader-3.2.0.tgz",
+    "webpack": "https://registry.npmjs.org/webpack/-/webpack-1.13.0.tgz"
   }
 }

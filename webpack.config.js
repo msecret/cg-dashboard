@@ -48,6 +48,10 @@ const config = {
           'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]')
       },
       {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
+      {
         test: /\.(svg|ico|png|gif|jpe?g)$/,
         loader: 'url-loader?limit=1024&name=img/[name].[ext]'
       },

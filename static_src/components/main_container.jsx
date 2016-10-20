@@ -56,16 +56,17 @@ export default class App extends React.Component {
     return (
       <div>
         <Header />
-        <div className={ this.styler('sidenav-parent', 'main_content', 'content-dashboard') }>
-          <nav className={ this.styler('sidenav') }>
-            { sidebar }
-          </nav>
-          <main className={ this.styler('sidenav-main', 'usa-content') }>
-            <div className={ this.styler('content') }>
-              { content }
-            </div>
-          </main>
-        </div>
+        <main role="main">
+          <aside id="nav" className={ this.styler('sidebar') }>
+            <nav className={ this.styler('local-nav') } aria-label="main-navigation">
+              <h1 className={ this.styler('is-visuallyhidden') }>Menu</h1>
+              { sidebar }
+            </nav>
+          </aside>
+          <article id="content" className={ this.styler('content-main') }>
+            { content }
+          </article>
+        </main>
       </div>
     );
   }

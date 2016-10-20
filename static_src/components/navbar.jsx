@@ -90,12 +90,12 @@ export class Nav extends React.Component {
     const sortedOrgs = this.state.orgs.sort((a, b) => a.name < b.name ? -1 : 1);
 
     return (
-      <div className={ this.styler('test-nav-primary') }>
-        <ul className={ mainList }>
-          <li key="overview" className={ this.styler('sidenav-entity') }>
+
+        <ul>
+          <li key="overview">
             <a href="/#" onClick={this._handleOverviewClick}>Overview</a>
           </li>
-          <li key="organizations" className={ this.styler('sidenav-header') }>
+          <li key="organizations" className={ this.styler('placeholder-link') }>
             <span className={ this.styler('sidenav-header-text') }>
               Organizations</span>
           </li>
@@ -111,16 +111,16 @@ export class Nav extends React.Component {
               <ul className={ secondList }>
                 <li className={ header }>
                   <a href={ this.orgHref(org) }>
-                    <span className={ this.styler('sidenav-header-text') }>
+                    <span>
                       Spaces</span>
                   </a>
                   <ul className={ thirdList }>
                     { sortedSpaces.map((space) => {
                       let activeSpaceClasses = (this.isCurrentSpace(space.guid)) ?
-                          this.styler('sidenav-active') : '';
+                          this.styler('active-to-do') : '';
                       return (
-                        <li key={ space.guid } className={activeSpaceClasses}>
-                          <a href={ this.spaceHref(org, space.guid) }>
+                        <li key={ space.guid } >
+                          <a className={activeSpaceClasses} href={ this.spaceHref(org, space.guid) }>
                             <span>{ space.name }</span>
                           </a>
                         </li>
@@ -146,7 +146,6 @@ export class Nav extends React.Component {
           );
         })}
         </ul>
-      </div>
     );
   }
 }

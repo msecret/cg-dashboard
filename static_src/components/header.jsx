@@ -22,42 +22,46 @@ export default class Header extends React.Component {
     const loggedIn = LoginStore.isLoggedIn();
     let loginLink = (!loggedIn) ? <a href="/handshake">Login</a> : <a href="/v2/logout">Logout</a>;
     return (
-    <header role="banner" className={ this.styler('header') }>
+    <header role="banner">
       <section className={ this.styler('govau--header') }>
-        <div className={ this.styler('header-title') }>
-          <a href="/" className={ this.styler('logo') } title="Home">
-            <svg className={ this.styler('logo') }>
-              <use
-                xlinkHref={ this.getImagePath('logo') }>
-              </use>
-            </svg>
-          </a>
-          <h1 className={ this.styler('usa-sr-only') }>cloud.gov.au</h1>
+        <div className={ this.styler('wrapper') }>
+          <div className={ this.styler('govau--logo') }>
+            <a href="/" className={ this.styler('logo') } title="Home">
+              cloud.gov.au Dashboard
+            </a>
+          </div>
+          <div className={ this.styler('feedback') }>
+            { loginLink }
+          </div>
         </div>
-        <nav className={ this.styler('header-side') }>
-          <ul className={ this.styler('nav') }>
-            <li className={ this.styler('nav-link') }>
-              <a href="https://cloud.gov/#about">About</a>
-            </li>
-            <li className={ this.styler('nav-link') }>
-              <a href="https://docs.cloud.gov">Documentation</a>
-            </li>
-            <li className={ this.styler('nav-link') }>
-              <a href="https://cloud.gov/updates/">Updates</a>
-            </li>
-            <li className={ this.styler('nav-link') }>
-              <a href="https://cloudgov.statuspage.io/">
-                Status
-              </a>
-            </li>
-            <li className={ this.styler('nav-link') }>
-              <a href="https://cloud.gov/#contact">Contact</a>
-            </li>
-            <li className={ this.styler('nav-link') }>
-              { loginLink }
-            </li>
-          </ul>
-        </nav>
+        {/*
+        <div className={ this.styler('wrapper') }>
+          <nav aria-label='global navigation' className={ this.styler('inline-links--inverted') }>
+            <ul className={ this.styler('global-navigation') }>
+              <li>
+                <a href="https://cloud.gov/#about">About</a>
+              </li>
+              <li>
+                <a href="https://docs.cloud.gov">Documentation</a>
+              </li>
+              <li>
+                <a href="https://cloud.gov/updates/">Updates</a>
+              </li>
+              <li>
+                <a href="https://cloudgov.statuspage.io/">
+                  Status
+                </a>
+              </li>
+              <li>
+                <a href="https://cloud.gov/#contact">Contact</a>
+              </li>
+              <li>
+                { loginLink }
+              </li>
+            </ul>
+          </nav>
+      </div>
+      */}
       </section>
     </header>
     );

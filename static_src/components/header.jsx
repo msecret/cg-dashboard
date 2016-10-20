@@ -22,8 +22,8 @@ export default class Header extends React.Component {
     const loggedIn = LoginStore.isLoggedIn();
     let loginLink = (!loggedIn) ? <a href="/handshake">Login</a> : <a href="/v2/logout">Logout</a>;
     return (
-    <header className={ this.styler('header') }>
-      <div className={ this.styler('header-wrap') }>
+    <header role="banner" className={ this.styler('header') }>
+      <section className={ this.styler('govau--header') }>
         <div className={ this.styler('header-title') }>
           <a href="/" className={ this.styler('logo') } title="Home">
             <svg className={ this.styler('logo') }>
@@ -32,7 +32,7 @@ export default class Header extends React.Component {
               </use>
             </svg>
           </a>
-          <h1 className={ this.styler('usa-sr-only') }>cloud.gov</h1>
+          <h1 className={ this.styler('usa-sr-only') }>cloud.gov.au</h1>
         </div>
         <nav className={ this.styler('header-side') }>
           <ul className={ this.styler('nav') }>
@@ -58,7 +58,7 @@ export default class Header extends React.Component {
             </li>
           </ul>
         </nav>
-      </div>
+      </section>
     </header>
     );
   }

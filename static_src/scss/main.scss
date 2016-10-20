@@ -3,7 +3,7 @@ $gov-ui-kit-image-base-url: 'https://gov-au-ui-kit.apps.staging.digital.gov.au/l
 @import "~gov-au-ui-kit";
 
 body {
-  header {
+  header.header {
     background-color: $light-green;
   }
 }

@@ -1,9 +1,9 @@
 package controllers_test
 
 import (
-	"github.com/18F/cg-dashboard/controllers"
-	"github.com/18F/cg-dashboard/helpers"
-	. "github.com/18F/cg-dashboard/helpers/testhelpers"
+	"github.com/AusDTO/cg-dashboard/controllers"
+	"github.com/AusDTO/cg-dashboard/helpers"
+	. "github.com/AusDTO/cg-dashboard/helpers/testhelpers"
 	"github.com/gocraft/web"
 	"golang.org/x/net/context"
 	"golang.org/x/oauth2"

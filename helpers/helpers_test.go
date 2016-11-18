@@ -1,8 +1,8 @@
 package helpers_test
 
 import (
-	"github.com/18F/cg-dashboard/helpers"
-	"github.com/18F/cg-dashboard/helpers/testhelpers"
+	"github.com/AusDTO/cg-dashboard/helpers"
+	"github.com/AusDTO/cg-dashboard/helpers/testhelpers"
 	"golang.org/x/net/context"
 
 	"net/http"

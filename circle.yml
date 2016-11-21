@@ -1,13 +1,13 @@
 machine:
   environment:
     GODIST: "go1.6.linux-amd64.tar.gz"
-    WS: "/home/ubuntu/.go_workspace/src/github.com/18F/cg-dashboard"
-    CF_API: "https://api.cloud.gov"
-    CF_ORGANIZATION: "cf"
-    CF_API_GC: "https://api.fr.cloud.gov"
-    CF_ORGANIZATION_GC: "cloud-gov"
+    WS: "/home/ubuntu/.go_workspace/src/github.com/AusDTO/cg-dashboard"
+    CF_API: "https://api.system.staging.digital.gov.au/"
+    CF_ORGANIZATION: "dto"
+    CF_SPACE: "cloud-gov-au"
+  node:
+    version: 6.7.0
   post:
-    - cd cg-dashboard && nvm install && nvm use && nvm alias default $(nvm current)
     - mkdir -p download
     - test -e download/$GODIST || curl -o download/$GODIST https://storage.googleapis.com/golang/$GODIST
     - sudo rm -rf /usr/local/go
@@ -24,7 +24,6 @@ dependencies:
     - sudo ln -s --force /home/ubuntu/bin/phantomjs-2.1.1 /usr/local/bin/phantomjs
     - go version
     - go get github.com/Masterminds/glide
-    - rm -rf $WS
     - mkdir -p $WS && chmod -R u+rw $WS && cp -R /home/ubuntu/cg-dashboard/. $WS
     - cd $WS && glide install
     - cd $WS && npm install
@@ -42,15 +41,15 @@ test:
 
 deployment:
   deploy:
-    branch: [master, staging, deprecated]
-    owner: 18F
+    branch: [master, staging]
+    owner: AusDTO
     commands:
       - cd $WS && pip install --user ruamel.yaml
       - cd $WS && export BUILD_INFO=build::$CIRCLE_BRANCH::$(date -u "+%Y-%m-%d-%H-%M-%S")::$CIRCLE_BUILD_NUM::$(deploy/npm-version.sh) && python deploy/vars-to-manifest.py
       - cd $WS && chmod a+x deploy/circle_deploy.sh && deploy/circle_deploy.sh
   production:
     tag: /[0-9]+(\.[0-9]+)*/
-    owner: 18F
+    owner: AusDTO
     commands:
       - cd $WS && pip install --user ruamel.yaml
       - cd $WS && export BUILD_INFO=build::$CIRCLE_BRANCH::$(date -u "+%Y-%m-%d-%H-%M-%S")::$CIRCLE_BUILD_NUM::$(deploy/npm-version.sh) && python deploy/vars-to-manifest.py

@@ -1,0 +1,7 @@
+---
+inherit: manifest-region-base.yml
+applications:
+- name: cg-dashboard-prod
+  host: app-manager
+  env:
+    CONSOLE_HOSTNAME: https://app-manager.apps.staging.digital.gov.au

@@ -1,0 +1,8 @@
+---
+inherit: ../manifest-base.yml
+env:
+  GOPACKAGENAME: github.com/AusDTO/cg-dashboard
+  CONSOLE_LOGIN_URL: https://login.system.staging.digital.gov.au/
+  CONSOLE_UAA_URL: https://uaa.system.staging.digital.gov.au/
+  CONSOLE_API_URL: https://api.system.staging.digital.gov.au/
+  CONSOLE_LOG_URL: https://loggregator.system.staging.digital.gov.au/

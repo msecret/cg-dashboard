@@ -1,6 +1,3 @@
-import HomeAbout from '../../components/home_about.jsx';
-import HomeIntro from '../../components/home_intro.jsx';
-
 export const config = {
   header: {
     // TODO: figure out what this should say
@@ -30,8 +27,5 @@ export const config = {
   },
   github: {
     url: 'https://github.com/AusDTO/cg-dashboard'
-  },
-  home: {
-    tiles: [HomeIntro, HomeAbout]
   }
 };

@@ -6,7 +6,7 @@ import LoginStore from '../stores/login_store.js';
 import HeaderLink from './header_link.jsx';
 
 import createStyler from '../util/create_styler';
-import { skinConfig } from 'skin/skin_config.js';
+import { config } from 'skin';
 
 export default class Header extends React.Component {
 
@@ -38,7 +38,7 @@ export default class Header extends React.Component {
         </div>
         <nav className={ this.styler('header-side') }>
           <ul className={ this.styler('nav') }>
-            { skinConfig.header.links.map((link, index) => <HeaderLink url={link.url} text={link.text} key={index} />) }
+            { config.header.links.map((link, index) => <HeaderLink url={link.url} text={link.text} key={index} />) }
             { loginLink }
           </ul>
         </nav>

@@ -1,7 +1,7 @@
 import HomeAbout from '../../components/home_about.jsx';
 import HomeIntro from '../../components/home_intro.jsx';
 
-export const skinConfig = {
+export const config = {
   header: {
     // TODO: figure out what this should say
     disclaimer: 'This is a disclaimer',

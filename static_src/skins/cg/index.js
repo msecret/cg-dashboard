@@ -4,7 +4,7 @@ import HomeEnvironments from '../../components/home_environments.jsx';
 import HomeSandbox from '../../components/home_sandbox.jsx';
 import HomeIntro from '../../components/home_intro.jsx';
 
-export const skinConfig = {
+export const config = {
   header: {
     disclaimer: 'An official website of the United States Government',
     show_flag: true,

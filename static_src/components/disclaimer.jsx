@@ -15,7 +15,7 @@ export default class Disclaimer extends React.Component {
 
   render() {
     let flagImg;
-    if (config.header.show_flag) {
+    if (config.getIn(['header', 'show_flag'])) {
       const flag = require('cloudgov-style/img/us_flag_small.png');
       const flagAlt = 'US flag signifying that this is a United States Federal Government website';
       flagImg = <img alt={ flagAlt } src={ flag }></img>;
@@ -24,7 +24,7 @@ export default class Disclaimer extends React.Component {
       <div className={ this.styler('usa-disclaimer') }>
         <div className={ this.styler('grid') }>
           <span className={ this.styler('usa-disclaimer-official') }>
-            { config.header.disclaimer }
+            { config.getIn(['header', 'disclaimer']) }
             { flagImg }
           </span>
           <span className={ this.styler('usa-disclaimer-stage') }>

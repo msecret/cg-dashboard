@@ -1,6 +1,5 @@
-import Immutable from 'immutable';
 
-export const config = Immutable.fromJS({
+export const config = {
   header: {
     disclaimer: 'An official website of the United States Government',
     show_flag: true,
@@ -33,4 +32,4 @@ export const config = Immutable.fromJS({
   github: {
     url: 'https://github.com/18F/cg-dashboard'
   }
-});
+};

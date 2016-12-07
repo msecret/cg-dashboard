@@ -1,7 +1,9 @@
-import Immutable from 'immutable';
+
+import merge from 'deepmerge';
+
 import { config as baseConfig } from '../cg';
 
-let newConfig = baseConfig.mergeDeep({
+const newConfig = merge({
   header: {
     // TODO: figure out what this should say
     disclaimer: 'This is a disclaimer',
@@ -13,28 +15,27 @@ let newConfig = baseConfig.mergeDeep({
   github: {
     url: 'https://github.com/AusDTO/cg-dashboard'
   }
-});
+}, baseConfig);
 
 // can't deep merge the links because we want to replace the entire list
-newConfig = newConfig.setIn(['header', 'links'], Immutable.fromJS(
-  [
-    {
-      text: 'About',
-      url: 'http://cloud.gov.au'
-    },
-    {
-      text: 'Documentation',
-      url: 'http://docs.cloud.gov.au'
-    },
-    {
-      text: 'Status',
-      url: 'https://status.cloud.gov.au'
-    },
-    {
-      text: 'Help',
-      url: 'http://docs.cloud.gov.au/support/help/'
-    }
-  ]
-));
+newConfig.header.links = [
+  {
+    text: 'About',
+    url: 'http://cloud.gov.au'
+  },
+  {
+    text: 'Documentation',
+    url: 'http://docs.cloud.gov.au'
+  },
+  {
+    text: 'Status',
+    url: 'https://status.cloud.gov.au'
+  },
+  {
+    text: 'Help',
+    url: 'http://docs.cloud.gov.au/support/help/'
+  }
+]
+;
 
 export const config = newConfig;
